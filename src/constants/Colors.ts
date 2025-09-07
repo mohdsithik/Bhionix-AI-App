@@ -3,8 +3,8 @@
 // Next type sort and choose Sort Lines Ascending or choose the Descending option.
 
 export default {
-  BLUE: 'blue',
-  RED: 'black',
+  Gray: '#808080',
+  White: '#FFFFFF',
 };
 
 // Alpha Value for color code

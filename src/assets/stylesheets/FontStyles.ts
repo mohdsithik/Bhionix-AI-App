@@ -7,12 +7,7 @@ export const getFont = (font: string, size: number, color: string) => {
 };
 
 const FontStyles = StyleSheet.create({
-  // font name format : name|Type|size|Color (color name should be refor from color constans)
-
-  //  poppinsM16White: getFont(Fonts.POPPINS_M, 16, Colors.white),
-
-  interBold14: getFont(Fonts.INTER_BOLD, 14, Colors.BLUE),
-  interSB14: getFont(Fonts.INTER_SEMIBOLD, 30, Colors.RED),
+  interR15Gray: getFont(Fonts.INTER_R, 15, Colors.Gray),
 });
 
 export default FontStyles;

@@ -2,7 +2,7 @@
 // Then hit the key combination Ctrl+P and type the greater than sign (>).
 // Next type sort and choose Sort Lines Ascending or choose the Descending option.
 enum Title {
-  A = 'a',
+  Experts_Booked_Solved = 'Experts. Booked. Solved.',
 }
 
 export { Title };
