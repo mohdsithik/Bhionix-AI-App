@@ -8,6 +8,9 @@ export const getFont = (font: string, size: number, color: string) => {
 
 const FontStyles = StyleSheet.create({
   interR15Gray: getFont(Fonts.INTER_R, 15, Colors.Gray),
+  interSB30Black: getFont(Fonts.INTER_SEMIBOLD, 25, Colors.Black),
+  interRegular16Gray: getFont(Fonts.INTER_R, 14, Colors.Gray),
+  interBold14Purple: getFont(Fonts.INTER_BOLD, 14, Colors.Purple),
 });
 
 export default FontStyles;

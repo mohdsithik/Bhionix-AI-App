@@ -5,6 +5,8 @@
 export default {
   Gray: '#808080',
   White: '#FFFFFF',
+  Black: '#000000',
+  Purple: '#5F259E',
 };
 
 // Alpha Value for color code

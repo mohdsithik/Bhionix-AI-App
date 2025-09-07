@@ -1,7 +1,7 @@
 enum ScreenName {
   SPLASHSCREEN = 'SplashScreen',
   LOGIN = 'Login',
-  WALKTHROUGH = 'WalkThrough',
+  WALKTHROUGH = 'Walkthrough',
 }
 
 export { ScreenName };
