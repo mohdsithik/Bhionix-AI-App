@@ -7,6 +7,8 @@ export default {
   White: '#FFFFFF',
   Black: '#000000',
   Purple: '#5F259E',
+  LineGray: '#D0D5DD',
+  Gray707070: '#707070',
 };
 
 // Alpha Value for color code

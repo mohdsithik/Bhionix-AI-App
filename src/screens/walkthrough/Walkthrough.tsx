@@ -12,6 +12,8 @@ import { useMemo, useState } from 'react';
 import styles from './Styles';
 import { Title } from '../../constants/Strings';
 import { RootStackScreenProps } from '../../navigation/Routes';
+import { Screen } from 'react-native-screens';
+import { ScreenName } from '../../navigation/ScreenName';
 
 const Walkthrough = ({ navigation }: RootStackScreenProps<'Walkthrough'>) => {
   const WalkthroughData = [
@@ -54,6 +56,7 @@ const Walkthrough = ({ navigation }: RootStackScreenProps<'Walkthrough'>) => {
 
   const onPressSkip = () => {
     // Navigate to SignIn Screen
+    navigation.replace(ScreenName.LOGIN);
   };
 
   return (

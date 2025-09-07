@@ -12,9 +12,10 @@ const styles = StyleSheet.create({
   scrollview: { position: 'absolute', top: 0, width: '100%' },
   appLogo: { marginTop: Dimension.n(70), alignSelf: 'center' },
   welcomeText: {
-    ...FontStyles.interSB30White,
+    ...FontStyles.interSB30White1,
     textAlign: 'center',
     marginTop: Dimension.n(26),
+    marginHorizontal: Dimension.n(20),
   },
   description: {
     ...FontStyles.interR14White,

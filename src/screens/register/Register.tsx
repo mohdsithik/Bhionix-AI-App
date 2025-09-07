@@ -1,18 +1,16 @@
-import { Image, ScrollView, StatusBar, Text, View } from 'react-native';
-import Colors from '../../constants/Colors';
+import { Image, ScrollView, Text, View } from 'react-native';
 import { Banner } from '../../assets/Images/Images';
 import Dimension from '../../constants/Dimension';
 import Logo from '../../assets/Icons/Logo.svg';
-import FontStyles from '../../assets/stylesheets/FontStyles';
-import LoginForm from '../../components/loginForm/LoginForm';
-import styles from './Styles';
 import { Title } from '../../constants/Strings';
+import styles from './Styles';
+import RegisterForm from '../../components/registerForm/RegisterForm';
 import { RootStackScreenProps } from '../../navigation/Routes';
 import { ScreenName } from '../../navigation/ScreenName';
 
-const Login = ({ navigation }: RootStackScreenProps<'Login'>) => {
-  const onPressSignUp = () => {
-    navigation.navigate(ScreenName.REGISTER);
+const Register = ({ navigation }: RootStackScreenProps<'Register'>) => {
+  const onPressLogin = () => {
+    navigation.goBack();
   };
 
   return (
@@ -22,14 +20,13 @@ const Login = ({ navigation }: RootStackScreenProps<'Login'>) => {
         <View style={styles.appLogo}>
           <Logo width={Dimension.n(40)} height={Dimension.n(40)} />
         </View>
-        <Text style={styles.welcomeText}>{Title.WELCOME_APP}</Text>
-        <Text style={styles.description}>{Title.YOUR_TRUSTED_APP}</Text>
+        <Text style={styles.welcomeText}>{Title.JOIN}</Text>
         <View style={{ paddingBottom: 20 }}>
-          <LoginForm onPressSignUp={onPressSignUp} />
+          <RegisterForm onPressLogin={onPressLogin} />
         </View>
         <View style={{ height: 20 }} />
       </ScrollView>
     </View>
   );
 };
-export default Login;
+export default Register;

@@ -4,8 +4,7 @@ import { ScreenName } from './ScreenName';
 import SplashScreen from '../screens/splashScreen/SplashScreen';
 import Login from '../screens/login/Login';
 import Walkthrough from '../screens/walkthrough/Walkthrough';
-
-// Constants
+import Register from '../screens/register/Register';
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
 
@@ -27,6 +26,14 @@ const MainStack = () => {
       <RootStack.Screen
         name={ScreenName.WALKTHROUGH}
         component={Walkthrough}
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <RootStack.Screen
+        name={ScreenName.REGISTER}
+        component={Register}
         options={{
           headerShown: false,
         }}
